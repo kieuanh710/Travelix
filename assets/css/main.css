@@ -828,7 +828,7 @@ span.slider_heading{
 .trending_item-name{
     font-size: 1.5rem;
     color: var(--black-color);
-    font-weight: 600;
+    font-weight: 750;
 }
 .trending_item-name:hover{
     color: var(--primary-color);
