@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Beyond';
+    src: url(../font/beyond_the_mountains/beyond_the_mountains.otf) format('truetype'), url(../font/beyond_the_mountains.ttf) format('opentype')
+}
+:root{
+    --topbar-color: #350a4e;
+    --white-color: #fff;
+    --primary-color: #fa9e1b; 
+    --des-color: #929191;
+    --black-color: #2d2c2c;
+    --linear-color: linear-gradient(to right,#fa9e1b,#8d4fff);
+    --footer-color: #31124b;
+    
+    --navbar-height: 118px;
+    --navbar-height-mb: 60px;
+    --topbar-height: 36px;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans',sans-serif; 
+    box-sizing: border-box;
+    /* cuộn khi nhảy trang */
+    scroll-behavior: smooth;
+    /* font-family: Arial, Helvetica, Arial sans-serif; */
+}
+.btn-wrap{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.btn-wrap:hover .btn-bg{
+    left: -100%;
+    cursor: pointer;
+}
+.btn-bg{
+    position: absolute;
+    background: linear-gradient(to right,#fa9e1b,#8d4fff,#fa9e1b);;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200%;
+    z-index: -1;
+    transition: all linear 0.3s;
+}
+.btn{
+    border: none;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 550;
+    color: var(--white-color);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 40px;
+}
+/* rating */
+.item-rating{
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+.item-rating i{
+    margin-right: 5px;
+    color: #a5a5a5;
+}
+.item-rating i:first-child{
+    color: #ffeb8d;
+}
+.item-rating i:nth-child(2){
+    color: #fed46b;
+}
+.item-rating i:nth-child(3){
+    color: #fbb53d;
+}
+.item-rating i:nth-child(4){
+    color: #fa9e1b;
+}
+/* title */
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #2d2c2c;
+    font-weight: 650;
+    margin: 0;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
