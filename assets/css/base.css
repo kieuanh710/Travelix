@@ -101,4 +101,14 @@ html{
     }
 }
 
+@keyframes headerScroll {
+    from {
+        height: var(--navbar-height);
+    }
+    to {
+        height: var(--navbar-height);
+    }
+}
+
+
 

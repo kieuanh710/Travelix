@@ -4,17 +4,35 @@
     padding: 0;
     width: 100%;
     height: 100vh;
+}
+.header-background{
     background: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../img/bg_header.webp) top center / cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .header .row{
     margin: 0 15px;
+}
+
+/* bakground */
+.home-background{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../images/bg_header.webp);
 }
 /* TOPBAR */
 .topbar{
     width: 100%;
     height: 36px;
     background: var(--topbar-color);
-    position: relative;
+    position: absolute;
+    display: block;
     z-index: 100;
 }
 
@@ -23,7 +41,6 @@
     font-size: 1rem;
     font-weight: 550;
     color: var(--white-color);
-    line-height: 34px;
     text-transform: uppercase;
     line-height: 36px;
 }
@@ -31,7 +48,7 @@
 .topbar_contact{
     display: flex;
     font-size: 10px;
-    line-height: 36px;
+    /* line-height: 36px; */
 }
 .topbar_phone{
     padding-right: 30px;
@@ -50,7 +67,6 @@
 
 .topbar_icon-link{
     padding: 0 10px;
-    line-height: 36px;
     text-decoration: none;
 }
 
@@ -58,7 +74,6 @@
     display: flex;
     justify-content: flex-end;
     margin: 0;
-    line-height: 36px;
 }
 
 .topbar_user-item{
@@ -90,11 +105,10 @@
 .navbar{
     width: 100%;
     display: inline-block;
-    height:var(--navbar-height);
+    /* height:var(--navbar-height); */
     background-color: rgba(54,19,84,.6);
-    position: relative;
+    position: fixed;
     z-index: 20;
-    /* position: fixed;  */
 }
 
 .navbar_container{
@@ -103,6 +117,7 @@
    align-items: center;
    padding: 30px 0 ;
    width: 100%;
+   padding-top: 60px;
 }
 
 .navbar_container-logo-link{
@@ -864,11 +879,11 @@ span.slider_heading{
     z-index: 0;
 }
 .contact_container{
-    z-index: 100;
+    z-index: 20;
     position: relative;
 }
 .contact_content{
-    z-index: 100;
+    z-index: 20;
     background: linear-gradient(to top right,#fa9e1b,#8d4fff);
     padding: 80px 50px;
     border-radius: 5px;
@@ -913,7 +928,7 @@ span.slider_heading{
 /* FOOTER */
 .footer{
     background: var(--footer-color);
-    padding: 120px 0 100px 0;
+    padding-top: 80px;
 }
 .footer_container{
 
@@ -1034,4 +1049,19 @@ span.slider_heading{
     font-size: 1.4rem;
     color: var(--white-color);
     line-height: 2;
+}
+/*  */
+.footer_copyright{
+    margin-top: 50px;
+    background-color: #1f0733;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px 0; */
+    color: #ccc;
+    font-size: 1.4rem;
+}
+.footer_copyright-link{
+    color: var(--primary-color);
 }

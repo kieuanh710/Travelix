@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <header class="header header-background">
+            <!-- TOPBAR -->
+            <div class="topbar hide-on-mb scroll">
+                <div class="grid wide">
+                    <div class="topbar_container show_tablte_mobile">
+                        <div class="row">
+                            <div class="l-6 m-8 c-8 c">
+                                <div class="topbar_contact">
+                                    <span class="topbar_phone">+ 45 123 456 789</span>
+                                    <div class="topbar_social">
+                                        <ul class="topbar_social-list">
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-brands fa-pinterest"></i>
+                                                </a>
+                                            </li>
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-brands fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-brands fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-solid fa-globe"></i>
+                                                </a>
+                                            </li>
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-brands fa-behance"></i>
+                                                </a>
+                                            </li>
+                                            <li class="topbar_social-item">
+                                                <a href="" class="topbar_icon-link">
+                                                    <i class="fa-brands fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="l-6 m-4 c-4">
+                                <ul class="topbar_user">
+                                    <li class="topbar_user-item topbar_user-item--separate">
+                                        <a href="" class="topbar_user-link">LOGIN</a>
+                                    </li>
+                                    <li class="topbar_user-item">
+                                        <a href="" class="topbar_user-link">REGISTER</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- NAVBAR  -->
+            <nav class="navbar">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="navbar_container">
+                            <!-- logo -->
+                            <div class="col l-3 m-6 c-6">
+                                <a href="" class="navbar_container-logo-link">
+                                    <img src="./assets/img/logo.webp" alt="Travelix">
+                                    TRAVELIX
+                                </a>  
+                            </div>
+                            <div class="col l-6 m-0 c-0 ">
+                                <ul class="navbar_container-list">
+                                    <li class="navbar_container-item active">
+                                        <a href="" class="navbar_container-link">Home</a>
+                                    </li>
+                                    <li class="navbar_container-item">
+                                        <a href="about.html"class="navbar_container-link">About us</a>
+                                    </li>
+                                    <li class="navbar_container-item">
+                                        <a href=""class="navbar_container-link">Offers</a>
+                                    </li>
+                                    <li class="navbar_container-item">
+                                        <a href=""class="navbar_container-link">News</a>
+                                    </li>
+                                    <li class="navbar_container-item">
+                                        <a href=""class="navbar_container-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- search pc -->
+                            <div class="col l-3 m-6 c-6">
+                                <div class="navbar_search">
+                                    <div class="navbar_container-search">
+                                        <i class="navbar_container-search-icon fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="search-form" class="navbar_container-search-input active" placeholder="Search...">
+                                    </div>
+                                    
+                                    <!-- MENU tablet + mobile -->
+                                    <div class="navbar_container-menu">
+                                        <label for="nav-mobile-input" class="navbar_container-menu hide-on-pc">
+                                            <i class="navbar_container-menu-icon fa-solid fa-bars"></i>
+                                        </label>
+                                        <input type="checkbox" hidden  name="" class="nav-input" id="nav-mobile-input">
+                                        <label for="nav-mobile-input" class="navbar_menu_overlay"></label>
+                                        <div class="navbar_bar_menu">
+                                            <label for="nav-mobile-input" class="nav_mobile-close">
+                                                <i class="bar_menu-close fa-solid fa-xmark"></i>
+                                            </label>
+                                            <div class="navbar_container_mb_list">
+                                                <ul>
+                                                    <li>
+                                                        <a href="index.html" class="bar_item-link active">Home</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="about.html" class="bar_item-link">About</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="bar_item-link">Offers</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="bar_item-link">News</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="bar_item-link">Contact</a>
+                                                    </li>
+                                                </ul>
+                                               
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div> 
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- SLIDER -->
+            <div class="home">
+                <div class="home_content">
+                    <h1 class="home_heading">ABOUT US</h1>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTAINER -->
+        <div class="container">
+            <!-- INTRO -->
+            <div class="intro">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-7 m-12 c-12">
+                            <div class="intro_item-bg" style="background-image: url('./assets/img/xintro.png.pagespeed.ic.wRAmcK6-ty.png');">
+                            </div>
+                        </div>
+                        <div class="col l-5 m-12 c-12">
+                            <div class="intro_item-container">
+                                <div class="intro_item-content">
+                                    <div class="intro_item-title">WE HAVE THE BEST TOURS</div>
+                                    <p class="intro_item-des">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula. Phasellus euismod gravida eros. Aenean nec ipsum aliquet, pharetra magna id, interdum sapien. Etiam id lorem eu nisl pellentesque semper. Nullam tincidunt metus placerat, suscipit leo ut, tempus nulla. Fusce at eleifend tellus. Ut eleifend dui nunc, non fermentum quam placerat non. Etiam venenatis nibh augue, sed eleifend justo tristique eu
+                                    </p>
+                                    <div class="intro_btn btn-wrap">
+                                        <div class="intro_btn-bg btn-bg"></div>
+                                        <a href="" class="btn">SEE MORE...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- STATISTICS -->
+            <div class="statistics">
+                <div class="grid wide">
+                    <div class="statistics_title">YEAR STATISTICS</div>
+                    <div class="statistics_des">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vulputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer elementum orci eu vehicula pretium. Donec bibendum tristique condimentum. Aenean in lacus ligula.</div>
+                    <div class="statistics_year">
+                        <div class="row">
+                            <div class="col l-6 m-6 c-6 text-left">
+                                <span class="start-year">2016</span>
+                            </div>
+                            <div class="col l-6 m-6 c-6 text-right">
+                                <span class="last-year">2017</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statistics_content">
+                        <div class="row">
+                            <div class="col l-2 m-2 c-2 left">
+                                <div class="statistics__item">
+                                    <img src="./assets/img/xstats_1.png.pagespeed.ic.cR8aWTUlD5.webp" alt="">
+                                    <div class="statistics__item-start">
+                                        <div class="statistics__item-year">1642</div>
+                                        <div class="statistics__item-type">Clients</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-8 m-8 c-8">
+                                <div class="statistics__bar" data-x="1642" data-y="3527">
+                                    <div class="statistics__bar-per">
+                                        <div class="statistics__bar-value">+ 100%</div>
+                                        <div class="statistics__bar-per-left" style="width: 31.77%;"></div>
+                                        <div class="statistics__bar-per-right" style="left: 68.23%; width: 68.23%; background: rgb(49, 18, 75);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-2 c-2 right">
+                                <div class="statistics__item">
+                                    <div class="statistics__item-last">
+                                        <div class="statistics__item-year">3527</div>
+                                        <div class="statistics__item-type">Clients</div>
+                                    </div>
+                                    <img src="./assets/img/xstats_1.png.pagespeed.ic.cR8aWTUlD5.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col l-2 m-2 c-2 left">
+                                <div class="statistics__item">
+                                    <img src="./assets/img/xstats_2.png.pagespeed.ic.YuC1yJOrPp.webp" alt="">
+                                    <div class="statistics__item-start">
+                                        <div class="statistics__item-year">768</div>
+                                        <div class="statistics__item-type">Returning Clients</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-8 m-8 c-8">
+                                <div class="statistics__bar" data-x="768" data-y="145">
+                                    <div class="statistics__bar-per">
+                                        <div class="statistics__bar-value">- 81%</div>
+                                        <div class="statistics__bar-per-left" style="width: 84.12%;"></div>
+                                        <div class="statistics__bar-per-right" style="left: 15.88%; width: 15.88%; background: rgb(169, 92, 228);"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-2 c-2 right">
+                                <div class="statistics__item">
+                                    <div class="statistics__item-last">
+                                        <div class="statistics__item-year">145</div>
+                                        <div class="statistics__item-type">Returning Clients</div>
+                                    </div>
+                                    <img src="./assets/img/xstats_2.png.pagespeed.ic.YuC1yJOrPp.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col l-2 m-2 c-2 left">
+                                <div class="statistics__item">
+                                    <img src="./assets/img/xstats_3.png.pagespeed.ic.JTe972ALL_.webp" alt="">
+                                    <div class="statistics__item-start">
+                                        <div class="statistics__item-year">11546</div>
+                                        <div class="statistics__item-type">Reach</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-8 m-8 c-8">
+                                <div class="statistics__bar" data-x="11546" data-y="921">
+                                    <div class="statistics__bar-per">
+                                        <div class="statistics__bar-value">- 19%</div>
+                                        <div class="statistics__bar-per-left" style="width: 55.37%;"></div>
+                                        <div class="statistics__bar-per-right" style="left: 44.63%; width: 44.63%; background: rgb(255, 0, 0);;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-2 c-2 right">
+                                <div class="statistics__item">
+                                    <div class="statistics__item-last">
+                                        <div class="statistics__item-year">921</div>
+                                        <div class="statistics__item-type">Reach</div>
+                                    </div>
+                                    <img src="./assets/img/xstats_3.png.pagespeed.ic.JTe972ALL_.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="row">
+                            <div class="col l-2 m-2 c-2 left">
+                                <div class="statistics__item">
+                                    <img src="./assets/img/xstats_4.png.pagespeed.ic.f6w2Rs6r4i.webp" alt="">
+                                    <div class="statistics__item-start">
+                                        <div class="statistics__item-year">3729</div>
+                                        <div class="statistics__item-type">More Items</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-8 m-8 c-8">
+                                <div class="statistics__bar" data-x="3729" data-y="17429">
+                                    <div class="statistics__bar-per">
+                                        <div class="statistics__bar-value">+ 367%</div>
+                                        <div class="statistics__bar-per-left" style="width: 17.62%;"></div>
+                                        <div class="statistics__bar-per-right" style="left: 82.38%; width: 82.38%; background: rgb(250, 158, 27);;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-2 m-2 c-2 right">
+                                <div class="statistics__item">
+                                    <div class="statistics__item-last">
+                                        <div class="statistics__item-year">17429</div>
+                                        <div class="statistics__item-type">More Items</div>
+                                    </div>
+                                    <img src="./assets/img/xstats_4.png.pagespeed.ic.f6w2Rs6r4i.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ADD -->
+            <div class="add">
+                <div class="grid wide">
+                    <div class="add__container">
+                        <div class="add_content">
+                            <div class="add_content-title">THAILAND</div>
+                            <div class="add_content-price">From
+                                <span>$999</span>
+                            </div>
+                            <div class="add_btn btn-wrap">
+                                <div class="add_btn-bg btn-bg"></div>
+                                <a href="" class="btn">SEE MORE...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- MILESTONES -->
+            <div class="milestones">
+                <div class="grid wide">
+                    <div class="milestones_container">
+                        <div class="row">
+                            <div class="milestone_container-item">
+                                <img src="./assets/img/xmilestone_1.png.pagespeed.ic.cgGYEf9S7l.webp" alt="">
+                                <div class="milestones_content-number">255</div>
+                                <div class="milestones_content-type">CLIENTS</div>
+                            </div>
+                            <div class="milestone_container-item">
+                                <img src="./assets/img/xmilestone_2.png.pagespeed.ic.V3B1723E2Z.webp" alt="">
+                                <div class="milestones_content-number">1176</div>
+                                <div class="milestones_content-type"> PROJECTS</div>
+                            </div>
+                            <div class="milestone_container-item">
+                                <img src="./assets/img/xmilestone_3.png.pagespeed.ic.TqXoultJd7.webp" alt="">
+                                <div class="milestones_content-number">39</div>
+                                <div class="milestones_content-type">COUNTRIES</div>
+                            </div>
+                            <div class="milestone_container-item">
+                                <img src="./assets/img/xmilestone_4.png.pagespeed.ic.y4je2yi22m.webp" alt="">
+                                <div class="milestones_content-number">127</div>
+                                <div class="milestones_content-type">COFFEES</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <div class="grid wide">
+                <div class="footer_container">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer_item">
+                                <div class="footer_item-name">
+                                    <a href="" class="footer_item-logo">
+                                        <img src="./assets/img/logo.webp" alt="Travelix">
+                                        TRAVELIX
+                                    </a>  
+                                </div>
+                                <div class="footer_item-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
+                                    <ul class="footer_item-social-list">
+                                        <li class="footer_item-social-link">
+                                            <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                                        </li>
+                                        <li class="footer_item-social-link">
+                                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="footer_item-social-link">
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                        <li class="footer_item-social-link">
+                                            <a href=""><i class="fa-brands fa-dribbble"></i></a>
+                                        </li>
+                                        <li class="footer_item-social-link">
+                                            <a href=""><i class="fa-brands fa-behance"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer_item">
+                                <h2 class="footer_item-name">blog posts</h2>
+                            </div>
+                            <div class="footer_item-blog">
+                                <div class="footer_blog-container">
+                                    <img src="./assets/img/footer1.webp" alt="">
+                                    <div class="footer_blog-content">
+                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <span class="footer_blog-date">July 20, 2021</span>
+                                    </div>
+                                </div>
+                                <div class="footer_blog-container">
+                                    <img src="./assets/img/footer1.webp" alt="">
+                                    <div class="footer_blog-content">
+                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <span class="footer_blog-date">July 20, 2021</span>
+                                    </div>
+                                </div>
+                                <div class="footer_blog-container">
+                                    <img src="./assets/img/footer1.webp" alt="">
+                                    <div class="footer_blog-content">
+                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <span class="footer_blog-date">July 20, 2021</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer_item">
+                                <h2 class="footer_item-name">tags</h2>
+                            </div>
+                            <div class="footer_item-content">
+                                <ul class="footer_item-tag-list">
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">design</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">music</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">party</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">adventure</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">fashion</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">video</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">photography</a>
+                                    </li>
+                                    <li class="footer_item-tag-item">
+                                        <a href="" class="footer_item-tag-link">travel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="footer_item">
+                                <h2 class="footer_item-name">contact info</h2>
+                            </div>
+                            <div class="footer_item-content">
+                                <ul class="footer_item-contact-list">
+                                    <li class="footer_item-contact-item">
+                                        <img src="./assets/img/placeholder.svg" alt="" class="footer_item-contact-icon">
+                                        <a href = "https://www.uit.edu.vn/" class="footer_item-contact-info">Đại học Công nghệ thông tin TP.HCM</a>
+                                    </li>
+                                    <li class="footer_item-contact-item">
+                                        <img src="./assets/img/phone-call.svg" alt="" class="footer_item-contact-icon">
+                                        <a href="tel:0523936017" class="footer_item-contact-info">0523936017</a>
+                                    </li>
+                                    <li class="footer_item-contact-item">
+                                        <img src="./assets/img/message.svg" alt="" class="footer_item-contact-icon">
+                                        <a href="mailto:kieuanh7101@gmail.com" class="footer_item-contact-info">kieuanh7101@gmail.com</a>
+                                    </li>
+                                    <li class="footer_item-contact-item">
+                                        <img src="./assets/img/planet-earth.svg" alt="" class="footer_item-contact-icon">
+                                        <a href="" class="footer_item-contact-info">www.fullstack.edu.vn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyright">
+               <span>
+                   Copyright © 2021 All rights reserved | This template is made with by    
+               </span> 
+               <a href="" class="footer_copyright-link"> Phan Mai Kieu Anh</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

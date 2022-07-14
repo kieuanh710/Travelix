@@ -1,0 +1,246 @@
+.header-background{
+    background: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../img/Turkey-Turkish-Cappadocia-hot-air-balloons-1149868-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* HOME */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.home_content{
+    text-align: center;
+}
+.home_heading{
+    margin: 0;
+    font-size: 7.2rem;
+    color: var(--white-color);
+    font-weight: 750;
+    line-height: 1.2;
+}
+/* INTRO */
+.intro{
+    width: 100%;
+    padding: 80px 20px 60px 20px;
+    background-color: #f6f9fb;
+    position: relative;
+    display: block;
+}
+
+.intro_item-bg{
+    position: relative;
+    padding-left: 50%;
+    padding-top: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.intro_item-container{
+    position: relative;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* text-align: center; */
+}
+
+.intro_item-title{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--black-color);
+}
+.intro_item-des{
+    font-size: 1.4rem;
+    color: var(--des-color);
+    margin: 40px 0;
+    color: #929191;
+    line-height: 2;
+    text-align: justify;
+}
+
+.intro_btn{
+    background-color: #8d4fff;
+    z-index: 1;
+}
+
+/* statistics */
+.statistics{
+    padding: 80px 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.statistics_title{
+    font-size: 3rem;
+    color: var(--black-color);
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.statistics_des{
+    color: var(--des-color);
+    line-height: 2;
+    padding: 0 50px 30px 50px;
+}
+
+.statistics_year{
+    color: var(--primary-color);
+    padding: 10px 60px;
+    font-weight: 700;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.left{
+    width: 25%;
+    float: left;
+    padding-left: 60px;
+}
+.right{
+    width: 25%;
+    float: right;
+    padding-right: 60px;
+}
+.statistics_content{
+    padding: 30px 0;
+}
+
+.statistics_content .row{
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistics__item-start, .statistics__item-last{
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+.statistics__item-year{
+    font-size: 2.4rem;
+    color: var(--black-color);
+    font-weight: 550;
+}
+
+.statistics__item-type{
+    font-size: 1.4rem;
+    color: var(--des-color);
+    font-weight: 400;
+}
+
+.statistics__bar{
+    position: relative;
+    width: 100%;
+}
+
+.statistics__bar-per{
+
+}
+
+.statistics__bar-value{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    text-align: center;
+    color: #929191;
+    padding-bottom: 20px;
+}
+
+.statistics__bar-per-left{
+    background-color: #e1e1e1;
+    height: 3px;
+    float: left;
+}
+
+.statistics__bar-per-right{
+    height: 3px;
+    float: right;
+}
+
+/* ADD */
+.add{
+    width: 100%;
+}
+
+.add__container{
+    background: url(../img/xadd.jpg.pagespeed.ic.GcGK49YYUj.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 295px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.add_content{
+    position: absolute;
+    color: var(--white-color);
+    top: 20%;
+    left: 20%;
+}
+
+.add_content-title{ 
+    font-size: 4.8rem;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.add_content-price{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+.add_content-price span{
+    font-weight: 550;
+}
+
+.add_btn{
+    z-index: 1;
+}
+
+/* MILESTONES */
+.milestones{
+    padding-bottom: 80px;
+}
+
+.milestones_container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.milestone_container-item{
+    text-align: center;
+    color: var(--black-color);
+}
+.milestones_content-number{
+    font-size: 4.8rem;
+    font-weight: 550;
+    padding-top: 25px;
+}
+
+.milestones_content-type{
+    font-size: 1.4rem;
+    color: var(--des-color);
+    padding-top: 10px;
+}
+
+

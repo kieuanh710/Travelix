@@ -163,6 +163,8 @@
         font-size: 1.5rem;
         padding: 15px 45px;
     }
+    /* ----------------------ABOUT-------------------- */
+    
 }
 
 /* Tablet */
@@ -189,6 +191,23 @@
     }
     .search_container-item{
         margin-bottom: 15px;
+    }
+    /* ---------------ABOUT-------------- */
+    .intro_item-container{
+        padding-right: 32px;
+    }
+    .intro_item-content{
+        padding-top: 30px;
+        text-align: center;
+    }
+    .intro-btn{
+        text-align: center;
+    }
+    .left{
+        padding-left: 0 !important;
+    }
+    .right{
+        padding-right: 0 !important;
     }
 
 }
@@ -315,6 +334,10 @@
     }
     .trending_item-location{
         font-size: 1.3rem;
+    }
+    /* --------------ABOUT--------------- */
+    .home_heading{
+        font-size: 3.2rem !important;
     }
 
 }
