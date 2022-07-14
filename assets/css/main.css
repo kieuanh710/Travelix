@@ -32,8 +32,7 @@
     height: 36px;
     background: var(--topbar-color);
     position: absolute;
-    display: block;
-    z-index: 100;
+    z-index: 26;
 }
 
 .topbar_container{
@@ -48,7 +47,6 @@
 .topbar_contact{
     display: flex;
     font-size: 10px;
-    /* line-height: 36px; */
 }
 .topbar_phone{
     padding-right: 30px;
@@ -105,10 +103,20 @@
 .navbar{
     width: 100%;
     display: inline-block;
-    /* height:var(--navbar-height); */
+    height:var(--navbar-height);
     background-color: rgba(54,19,84,.6);
     position: fixed;
-    z-index: 20;
+    z-index: 25;
+}
+
+.navbar .scroll{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    height: 107px;
+    animation: headerScroll linear .3s forwards;
 }
 
 .navbar_container{
@@ -133,6 +141,9 @@
     padding-right: 5px;
     width: 40px;
 }
+.navbar_container-list{
+    text-align: right;
+}
 .navbar_container-item{
     text-transform: uppercase;
     padding: 10px 15px;
@@ -142,8 +153,8 @@
     cursor: pointer;
 }
 .navbar_container-link{
-    font-size: 1.4rem;
-    font-weight: 540;
+    font-size: 1.5rem;
+    font-weight: 550;
     color: var(--white-color);
 }
 .navbar_container-item,
@@ -289,6 +300,7 @@
     list-style: none;
     justify-content: space-between;
     right: 0;
+    padding-left: 50px;
 }
 .navbar_container_mb_list ul{
     list-style: none;
@@ -343,7 +355,6 @@ span.slider_heading{
 /* search */
 .search{
     position: relative;
-    height: 192px;
     background: linear-gradient(to right,#fa9e1b,#8d4fff);
 }
 .search_header{
@@ -402,11 +413,11 @@ span.slider_heading{
 
 /* search container */
 .search_container {
-    height: 192px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
 }
 
 .search_container-item{
@@ -496,12 +507,12 @@ span.slider_heading{
     text-align: center;
     padding-bottom: 74px;
 }
-/* .tour_content-heading{
+.tour_content-heading{
     margin: 0;
     font-size: 3.6rem;
     color: #2d2c2c;
     margin-bottom: 30px;  
-} */
+}
 .tour_content-des{
     font-size: 2.4rem;
     font-style: italic;
@@ -621,7 +632,7 @@ span.slider_heading{
 .offers{
     width: 100%;
     padding: 80px 0 60px 0;
-    background-color: #f3f6f9;
+    background-color: #fff;
 }
 /* .offers_title{
     text-align: center;
@@ -667,9 +678,9 @@ span.slider_heading{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0 20px;
 }
 .offers_item-content{
-
 }
 .offers_item-price{
     font-size: 3.6rem;
@@ -883,7 +894,8 @@ span.slider_heading{
     position: relative;
 }
 .contact_content{
-    z-index: 20;
+    display: block;
+    z-index: 1;
     background: linear-gradient(to top right,#fa9e1b,#8d4fff);
     padding: 80px 50px;
     border-radius: 5px;
@@ -897,6 +909,7 @@ span.slider_heading{
 .contact_form{
     margin-top: 50px;
     display: block;
+    text-align: center;
 }
 .contact_input{
     font-size: 16px;
@@ -928,7 +941,7 @@ span.slider_heading{
 /* FOOTER */
 .footer{
     background: var(--footer-color);
-    padding-top: 80px;
+    padding-top: 100px;
 }
 .footer_container{
 

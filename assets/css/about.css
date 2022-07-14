@@ -47,7 +47,6 @@
 
 .intro_item-container{
     position: relative;
-    padding-left: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -105,17 +104,13 @@
     text-align: right;
 }
 .left{
-    width: 25%;
-    float: left;
-    padding-left: 60px;
+    padding-left: 30px;
 }
 .right{
-    width: 25%;
-    float: right;
-    padding-right: 60px;
+    padding-right: 30px;
 }
 .statistics_content{
-    padding: 30px 0;
+    padding: 30px;
 }
 
 .statistics_content .row{
@@ -124,14 +119,19 @@
     align-items: center;
 }
 
-.statistics__item{
+.statistics__item .start-left{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.start-left{
+    text-align: left;
+}
+.start-right{
+    text-align: right;
+}
 
 .statistics__item-start, .statistics__item-last{
-    padding: 0 10px;
     line-height: 1.4;
 }
 
@@ -160,9 +160,7 @@
     position: absolute;
     top: -30px;
     left: 50%;
-    text-align: center;
     color: #929191;
-    padding-bottom: 20px;
 }
 
 .statistics__bar-per-left{

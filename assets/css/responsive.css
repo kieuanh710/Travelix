@@ -22,6 +22,7 @@
         justify-content: flex-end;
         align-items: center;
     }
+
     .navbar_container-search{
         position: relative;
         text-align: right; 
@@ -164,7 +165,10 @@
         padding: 15px 45px;
     }
     /* ----------------------ABOUT-------------------- */
-    
+    .intro_item-content{
+        padding-top: 30px;
+        text-align: center;
+    }
 }
 
 /* Tablet */
@@ -193,13 +197,6 @@
         margin-bottom: 15px;
     }
     /* ---------------ABOUT-------------- */
-    .intro_item-container{
-        padding-right: 32px;
-    }
-    .intro_item-content{
-        padding-top: 30px;
-        text-align: center;
-    }
     .intro-btn{
         text-align: center;
     }
@@ -234,8 +231,8 @@
     }
     .navbar_container{
         height: var(--navbar-height-mb);
+        padding: 0 0;
     }
-    
     .navbar_container-logo-link{
         font-size: 1.4rem;
     }
@@ -335,9 +332,60 @@
     .trending_item-location{
         font-size: 1.3rem;
     }
-    /* --------------ABOUT--------------- */
-    .home_heading{
-        font-size: 3.2rem !important;
+    /* contact */
+    .contact_content {
+        margin: 0 10px;
+        text-align: center;
+    }
+    
+    .contact_input{
+        width: 100%;
+    }
+    /* footer */
+    .footer_container {
+        margin: 0 30px;
+    }
+    .footer_item-name{
+        margin-bottom: 40px;
+    }
+    .footer_item-content, .footer_item-tag-list{
+        text-align: center;
+    } 
+    /* copyright */
+    .footer_copyright{
+        height: 60px;
+        text-align: center;
+        line-height: 1.2;
+        padding: 0 20px;
     }
 
+    /* --------------ABOUT--------------- */
+    .home_heading{
+        font-size: 3.2rem ;
+    }
+    .intro_item-title{
+        font-size: 2.2rem ;
+    }
+    .add{
+        padding: 0 20px;
+    }
+    .add_content-title{
+        font-size: 3rem;
+    }
+    .milestone_container-item{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .statistics__item{
+        display: block;
+    }
+    .left{
+        padding-left: 0;
+    }
+    .between{
+        padding: 0 30px;
+    }
+    .right{
+        padding-right: 0;
+    }
 }
