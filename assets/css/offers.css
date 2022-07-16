@@ -62,7 +62,7 @@
 }
 .search_extra-item label{
     font-size: 1.4rem;
-    color: var(--black-color);
+    color: var(--white-color);
     font-weight: 550;
     cursor: pointer;
 }
@@ -75,7 +75,7 @@
     color: rgb(45, 44, 44);
 }
 .offers_container-filter-list, 
-.offers_filter-item-list {
+.offers_container-filter-item--list {
     list-style: none;
     text-decoration: none;
 }
@@ -89,6 +89,8 @@
     padding-left: 25px;
     padding-right: 10px;
     margin-right: 50px;
+    margin-bottom: 50px;
+    cursor: pointer;
 }
 .distance{
     width: 234px !important;
@@ -98,36 +100,39 @@
     float: right;
     line-height: 48px;
 }
-.offers_filter-item-list{
+.offers_container-filter-item--list{
     cursor: pointer;
-    display: block;
-    position: absolute;
-    right: 0;
+    display: none;
+    position: absolute; 
+    right: 0; 
     top: 106%;
     margin: 0;
     width: 100%;
     background: #fff;
-    display: none;
     z-index: 1;
     box-shadow: 0 15px 25px rgb(63 78 100 / 15%);
-    animation: transalate .5s linear;
-}
-.offers_filter-item-list li span:hover{
-    color: #b5aec4;;
-}
-.offers_filter-item-list li {
-    display: block;
-    position: absolute;
-    width: 100%;
-    background: #fff;
-    opacity: 0;
     box-shadow: 0 15px 25px rgb(63 78 100 / 15%);
-    list-style: none;
-    text-align: center;
-    padding: 0 15px;
+    animation: down linear 0.5s;
+    
 }
 
-.offers_filter-item-list li span{
+.offers_container-filter-item:hover .offers_container-filter-item--list{
+    display: block;
+}
+.offers_container-filter-item--list li span:hover{
+    color: #b5aec4;;
+}
+.offers_container-filter-item--list li {
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    opacity: 1;
+    /* box-shadow: 0 15px 25px rgb(63 78 100 / 15%); */
+    text-align: center;
+    padding: 0px 15px;
+}
+
+.offers_container-filter-item ul li span{
     display: block;
     height: 40px;
     line-height: 40px;
@@ -137,17 +142,64 @@
     transition: all .3s ease;
 }
 
-.offers_container-filter-item:hover ~ .offers_filter-item-list li span{
-    display: block;
+.offers_container{
+    padding-bottom: 50px;
 }
-.offers_item-bgg{
-    position: absolute;
-    top: 0;
-    left: 0;
+.offers_item-bg{
+    position: relative;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center center; 
+}
+.offers_item-wrap{
+    padding-bottom: 0 ;
+}
+.offers_item-container{
+    margin-left: 0;   
+    position: relative;
+}
 
+.search_btn{
+    background-color: #31124b;
+    z-index: 1;
+    margin-top: 30px;
+    margin-right: 78%;
+}
+.search_btn:hover{
+    opacity: 0.8;
+}
+.search_btn-bg{
+    text-align: center;
+}
+.btn-bg{
+    background-color: #31124b !important;
+}
+.offers_review{
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+}
+.offers_review-content{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.offers_review-title{
+    color: var(--black-color);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.offers_review-content span{
+    color: var(--des-color);
+}
+.offers_review-point{
+    font-size: 2.8rem;
+    font-weight: 600;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 15px;
+    margin-left: 10px;
 }

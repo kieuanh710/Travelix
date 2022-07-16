@@ -128,7 +128,7 @@
    padding-top: 60px;
 }
 
-.navbar_container-logo-link{
+/* .navbar_container-logo-link{
     text-decoration: none;
     color: #f4f4f8;
     margin-right: 10px;
@@ -140,7 +140,7 @@
 .navbar_container-logo-link img{
     padding-right: 5px;
     width: 40px;
-}
+} */
 .navbar_container-list{
     text-align: right;
 }
@@ -681,6 +681,7 @@ span.slider_heading{
     padding: 0 20px;
 }
 .offers_item-content{
+    position: relative;
 }
 .offers_item-price{
     font-size: 3.6rem;
@@ -971,8 +972,8 @@ span.slider_heading{
     font-weight: 550;
     color: var(--white-color);
     line-height: 2;
-}
-.footer_item-social-list{
+ }
+/*.footer_item-social-list{
     list-style: none;
     margin-top: 20px;
 }
@@ -985,7 +986,8 @@ span.slider_heading{
     height: 32px;
     text-align: center;
     margin-right: 10px;
-}
+}*/
+
 .footer_item-social-link:hover{
     background-color: var(--primary-color);
     color: var(--footer-color);
@@ -996,7 +998,7 @@ span.slider_heading{
 .footer_item-social-link a i{
     line-height: 32px;
     color: var(--white-color);
-}
+} 
 
 /* footer blog */
 .footer_item-blog{
@@ -1046,8 +1048,8 @@ span.slider_heading{
     font-size: 1.3rem;
     color: var(--white-color);
 }
-/*  */
-.footer_item-contact-item{
+/* info */
+/* .footer_item-contact-item{
     margin-bottom: 20px;
     list-style: none;
     display: flex;
@@ -1062,7 +1064,7 @@ span.slider_heading{
     font-size: 1.4rem;
     color: var(--white-color);
     line-height: 2;
-}
+} */
 /*  */
 .footer_copyright{
     margin-top: 50px;

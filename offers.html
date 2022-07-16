@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travelix</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/offers.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -84,10 +84,10 @@
                         <div class="navbar_container">
                             <!-- logo -->
                             <div class="col l-3 m-6 c-6">
-                                <a href="" class="navbar_container-logo-link">
+                                <a href="index.html" class="navbar_container-logo-link logo-link">
                                     <img src="./assets/img/logo.webp" alt="Travelix">
                                     TRAVELIX
-                                </a>  
+                                </a>    
                             </div>
                             <div class="col l-6 m-0 c-0 ">
                                 <ul class="navbar_container-list">
@@ -162,7 +162,7 @@
             <!-- SLIDER -->
             <div class="home">
                 <div class="home_content">
-                    <h1 class="home_heading">OURS OFFERS</h1>
+                    <h1 class="home_heading">OUR OFFERS</h1>
                 </div>
             </div>
         </header>
@@ -250,14 +250,6 @@
                                                 <label for="carParking">Car Parking</label>
                                             </div>
                                             <div class="search_extra-item">
-                                                <input type="checkbox" class="search_extra" name="wheelchair" id="wheelchair">
-                                                <label for="wheelchair">Wheelchair Accessible</label>
-                                            </div>
-                                            <div class="search_extra-item">
-                                                <input type="checkbox" class="search_extra" name="wireless" id="wireless">
-                                                <label for="wireless">Wireless Internet</label>
-                                            </div>
-                                            <div class="search_extra-item">
                                                 <input type="checkbox" class="search_extra" name="reservations" id="reservations">
                                                 <label for="reservations">Reservations</label>
                                             </div>
@@ -268,6 +260,14 @@
                                             <div class="search_extra-item">
                                                 <input type="checkbox" class="search_extra" name="private" id="private">
                                                 <label for="private">Private Parking</label>
+                                            </div>
+                                            <div class="search_extra-item">
+                                                <input type="checkbox" class="search_extra" name="wireless" id="wireless">
+                                                <label for="wireless">Wireless Internet</label>
+                                            </div>
+                                            <div class="search_extra-item">
+                                                <input type="checkbox" class="search_extra" name="wheelchair" id="wheelchair">
+                                                <label for="wheelchair">Wheelchair Accessible</label>
                                             </div>
                                         </div>
                                     </div>
@@ -290,12 +290,12 @@
 
                                 </div> -->
                                 <!-- BTN -->
-                                <div class="search_container-btn l-2 m-4 c-4 ">
-                                    <a href="">Search</a>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                                <!-- <div class="search_container-btn l-2 m-4 c-4 ">
+                                </div> -->
+                            </div>
+                            <div class="search_btn btn-wrap">
+                                <div class="search_btn-bg "></div>
+                                <a href="" class="btn">SEARCH...</a>
                             </div>
                         </div>
                     </div>
@@ -304,40 +304,43 @@
             <!-- OFFERS -->
             <div class="offers">
                 <div class="grid wide">
+                    <!-- filter -->
                     <div class="row">
                         <div class="offers_container-filter">
                             <ul class="offers_container-filter-list">
                                 <li class="offers_container-filter-item">Price
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <ul class="offers_filter-item-list">
+                                    <ul class="offers_container-filter-item--list">
                                         <li><span>Show All</span></li>
                                         <li><span>Ascending</span></li>
                                     </ul>
                                 </li>
                                 <li class="offers_container-filter-item">Location
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <ul class="offers_filter-item-list">
+                                    <ul class="offers_container-filter-item--list">
                                         <li><span>Default</span></li>
                                         <li><span>Alphabetical</span></li>
                                     </ul>
                                 </li>
                                 <li class="offers_container-filter-item">Stars
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <ul class="offers_filter-item-list">
+                                    <ul class="offers_container-filter-item--list">
                                         <li><span>Show All</span></li>
                                         <li><span>Ascending</span></li>
+                                        <li><span>3</span></li>
+                                        <li><span>4</span></li>
                                     </ul>
                                 </li>
                                 <li class="offers_container-filter-item distance">Distance form center
                                     <i class="fa-solid fa-angle-down"></i>
-                                    <ul class="offers_filter-item-list">
+                                    <ul class="offers_container-filter-item--list">
                                         <li><span>Distance</span></li>
                                         <li><span>Distance</span></li>
                                     </ul>
                                 </li>
                                 <li class="offers_container-filter-item">Reviews
                                     <i class="offers_container-filter-icon fa-solid fa-angle-down"></i>
-                                    <ul class="offers_filter-item-list">
+                                    <ul class="offers_container-filter-item--list">
                                         <li><span>Review</span></li>
                                         <li><span>Review</span></li>
                                     </ul>
@@ -348,174 +351,307 @@
                     <div class="offers_content">
                         <div class="row">
                             <div class="col l-12 m-12 c-12">
-                                <div class="offers_item-wrap">
-                                    <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_5.jpg.pagespeed.ic.BPUGlc08kT.webp');">
-                                        <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
-                                    </div>
-                                    <div class="offers_item-container">
-                                        <div class="offers_item-content">
-                                            <h4 class="offers_item-price">$80
-                                                <span>per night</span>
-                                            </h4>
-                                            <div class="offers_item-rating item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <p class="offers_item-des">
-                                                Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                            </p>
-                                            <div class="offers_item-icons">
-                                                <ul class="offers_icons-list">
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon1.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon2.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon3.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon4.webp" alt="">
-                                                    </li>
-                                                </ul>
+                                <div class="offers_container">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_5.jpg.pagespeed.ic.BPUGlc08kT.webp');">
+                                                <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
                                             </div>
                                         </div>
-                                        <div class="offers_item-link">
-                                            <a href="">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col l-12 m-12 c-12">
-                                <div class="offers_item-wrap">
-                                    <div class="offers_item-bg" style="background-image: url('./assets/img/offersbg1.webp');">
-                                        <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
-                                    </div>
-                                    <div class="offers_item-container">
-                                        <div class="offers_item-content">
-                                            <h4 class="offers_item-price">$80
-                                                <span>per night</span>
-                                            </h4>
-                                            <div class="offers_item-rating item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                        <div class="l-8 m-6 c-12">
+                                            <div class="offers_item-wrap">
+                                                <div class="offers_item-container">
+                                                    <div class="offers_item-content">
+                                                        <h4 class="offers_item-price">$70
+                                                            <span>per night</span>
+                                                        </h4>
+                                                        <div class="offers_item-rating item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <p class="offers_item-des">
+                                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Nullam eu convallis tortor. Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <div class="offers_item-icons">
+                                                            <ul class="offers_icons-list">
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon1.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon2.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon3.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon4.webp" alt="">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search_btn btn-wrap">
+                                                        <div class="search_btn-bg "></div>
+                                                        <a href="" class="btn">SEE MORE...</a>
+                                                    </div>
+                                                    <div class="offers_review">
+                                                        <div class="offers_review-content">
+                                                            <div class="offers_review-title">very good</div>
+                                                            <span>100 reviews</span>
+                                                        </div>
+                                                        <div class="offers_review-point">8.1</div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <p class="offers_item-des">
-                                                Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                            </p>
-                                            <div class="offers_item-icons">
-                                                <ul class="offers_icons-list">
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon1.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon2.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon3.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon4.webp" alt="">
-                                                    </li>
-                                                </ul>
-                                            </div>
                                         </div>
-                                        <div class="offers_item-link">
-                                            <a href="">Read more</a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col l-12 m-12 c-12">
-                                <div class="offers_item-wrap">
-                                    <div class="offers_item-bg" style="background-image: url('./assets/img/offersbg1.webp');">
-                                        <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
-                                    </div>
-                                    <div class="offers_item-container">
-                                        <div class="offers_item-content">
-                                            <h4 class="offers_item-price">$80
-                                                <span>per night</span>
-                                            </h4>
-                                            <div class="offers_item-rating item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <p class="offers_item-des">
-                                                Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                            </p>
-                                            <div class="offers_item-icons">
-                                                <ul class="offers_icons-list">
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon1.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon2.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon3.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon4.webp" alt="">
-                                                    </li>
-                                                </ul>
+                                <div class="offers_container">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_1.jpg.pagespeed.ic.LnLHOsFCJq.webp');">
+                                                <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
                                             </div>
                                         </div>
-                                        <div class="offers_item-link">
-                                            <a href="">Read more</a>
+                                        <div class="l-8 m-6 c-12">
+                                            <div class="offers_item-wrap">
+                                                <div class="offers_item-container">
+                                                    <div class="offers_item-content">
+                                                        <h4 class="offers_item-price">$90
+                                                            <span>per night</span>
+                                                        </h4>
+                                                        <div class="offers_item-rating item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <p class="offers_item-des">
+                                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Nullam eu convallis tortor. Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <div class="offers_item-icons">
+                                                            <ul class="offers_icons-list">
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon1.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon2.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon3.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon4.webp" alt="">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search_btn btn-wrap">
+                                                        <div class="search_btn-bg "></div>
+                                                        <a href="" class="btn">SEE MORE...</a>
+                                                    </div>
+                                                    <div class="offers_review">
+                                                        <div class="offers_review-content">
+                                                            <div class="offers_review-title">very good</div>
+                                                            <span>100 reviews</span>
+                                                        </div>
+                                                        <div class="offers_review-point">8.1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="col l-12 m-12 c-12">
-                                <div class="offers_item-wrap">
-                                    <div class="offers_item-bg" style="background-image: url('./assets/img/offersbg1.webp');">
-                                        <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
+                                <div class="offers_container">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_6.jpg.pagespeed.ic.z1jAmiqjUy.webp');">
+                                                <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
+                                            </div>
+                                        </div>
+                                        <div class="l-8 m-6 c-12">
+                                            <div class="offers_item-wrap">
+                                                <div class="offers_item-container">
+                                                    <div class="offers_item-content">
+                                                        <h4 class="offers_item-price">$50
+                                                            <span>per night</span>
+                                                        </h4>
+                                                        <div class="offers_item-rating item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <p class="offers_item-des">
+                                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Nullam eu convallis tortor. Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <div class="offers_item-icons">
+                                                            <ul class="offers_icons-list">
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon1.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon2.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon3.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon4.webp" alt="">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search_btn btn-wrap">
+                                                        <div class="search_btn-bg "></div>
+                                                        <a href="" class="btn">SEE MORE...</a>
+                                                    </div>
+                                                    <div class="offers_review">
+                                                        <div class="offers_review-content">
+                                                            <div class="offers_review-title">very good</div>
+                                                            <span>100 reviews</span>
+                                                        </div>
+                                                        <div class="offers_review-point">8.1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="offers_item-container">
-                                        <div class="offers_item-content">
-                                            <h4 class="offers_item-price">$80
-                                                <span>per night</span>
-                                            </h4>
-                                            <div class="offers_item-rating item-rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <p class="offers_item-des">
-                                                Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.
-                                            </p>
-                                            <div class="offers_item-icons">
-                                                <ul class="offers_icons-list">
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon1.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon2.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon3.webp" alt="">
-                                                    </li>
-                                                    <li class="offers_icons-item">
-                                                        <img src="./assets/img/icon4.webp" alt="">
-                                                    </li>
-                                                </ul>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="offers_container">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_7.jpg.pagespeed.ic.yqTUd4HnKP.webp');">
+                                                <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
                                             </div>
                                         </div>
-                                        <div class="offers_item-link">
-                                            <a href="">Read more</a>
+                                        <div class="l-8 m-6 c-12">
+                                            <div class="offers_item-wrap">
+                                                <div class="offers_item-container">
+                                                    <div class="offers_item-content">
+                                                        <h4 class="offers_item-price">$110
+                                                            <span>per night</span>
+                                                        </h4>
+                                                        <div class="offers_item-rating item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <p class="offers_item-des">
+                                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Nullam eu convallis tortor. Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <div class="offers_item-icons">
+                                                            <ul class="offers_icons-list">
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon1.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon2.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon3.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon4.webp" alt="">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search_btn btn-wrap">
+                                                        <div class="search_btn-bg "></div>
+                                                        <a href="" class="btn">SEE MORE...</a>
+                                                    </div>
+                                                    <div class="offers_review">
+                                                        <div class="offers_review-content">
+                                                            <div class="offers_review-title">very good</div>
+                                                            <span>100 reviews</span>
+                                                        </div>
+                                                        <div class="offers_review-point">8.1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-12 m-12 c-12">
+                                <div class="offers_container">
+                                    <div class="row">
+                                        <div class="col l-4 m-6 c-12">
+                                            <div class="offers_item-bg" style="background-image: url('./assets/img/xoffer_8.jpg.pagespeed.ic.7TP4Qvessu.webp');">
+                                                <a href="" class="offers_item-bg-name">GRAND CASTLE</a>
+                                            </div>
+                                        </div>
+                                        <div class="l-8 m-6 c-12">
+                                            <div class="offers_item-wrap">
+                                                <div class="offers_item-container">
+                                                    <div class="offers_item-content">
+                                                        <h4 class="offers_item-price">$50
+                                                            <span>per night</span>
+                                                        </h4>
+                                                        <div class="offers_item-rating item-rating">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                        </div>
+                                                        <p class="offers_item-des">
+                                                            Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                                            Nullam eu convallis tortor. Lorem ipsum dolor sit amet.
+                                                        </p>
+                                                        <div class="offers_item-icons">
+                                                            <ul class="offers_icons-list">
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon1.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon2.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon3.webp" alt="">
+                                                                </li>
+                                                                <li class="offers_icons-item">
+                                                                    <img src="./assets/img/icon4.webp" alt="">
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="search_btn btn-wrap">
+                                                        <div class="search_btn-bg "></div>
+                                                        <a href="" class="btn">SEE MORE...</a>
+                                                    </div>
+                                                    <div class="offers_review">
+                                                        <div class="offers_review-content">
+                                                            <div class="offers_review-title">very good</div>
+                                                            <span>100 reviews</span>
+                                                        </div>
+                                                        <div class="offers_review-point">8.1</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -531,27 +667,27 @@
                         <div class="col l-3 m-6 c-12">
                             <div class="footer_item">
                                 <div class="footer_item-name">
-                                    <a href="" class="footer_item-logo">
+                                    <a href="index.html" class="footer_item-logo">
                                         <img src="./assets/img/logo.webp" alt="Travelix">
                                         TRAVELIX
                                     </a>  
                                 </div>
                                 <div class="footer_item-content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.</p>
-                                    <ul class="footer_item-social-list">
-                                        <li class="footer_item-social-link">
+                                    <ul class="footer_item-social-list social-list">
+                                        <li class="footer_item-social-link social-link">
                                             <a href=""><i class="fa-brands fa-pinterest"></i></a>
                                         </li>
-                                        <li class="footer_item-social-link">
+                                        <li class="footer_item-social-link social-link">
                                             <a href=""><i class="fa-brands fa-facebook-f"></i></a>
                                         </li>
-                                        <li class="footer_item-social-link">
+                                        <li class="footer_item-social-link social-link">
                                             <a href=""><i class="fa-brands fa-twitter"></i></a>
                                         </li>
-                                        <li class="footer_item-social-link">
+                                        <li class="footer_item-social-link social-link">
                                             <a href=""><i class="fa-brands fa-dribbble"></i></a>
                                         </li>
-                                        <li class="footer_item-social-link">
+                                        <li class="footer_item-social-link social-link">
                                             <a href=""><i class="fa-brands fa-behance"></i></a>
                                         </li>
                                     </ul>
@@ -566,21 +702,21 @@
                                 <div class="footer_blog-container">
                                     <img src="./assets/img/footer1.webp" alt="">
                                     <div class="footer_blog-content">
-                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <a href="news.html" class="footer_blog-name">Travel with us this year</a>
                                         <span class="footer_blog-date">July 20, 2021</span>
                                     </div>
                                 </div>
                                 <div class="footer_blog-container">
                                     <img src="./assets/img/footer1.webp" alt="">
                                     <div class="footer_blog-content">
-                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <a href="news.html" class="footer_blog-name">Travel with us this year</a>
                                         <span class="footer_blog-date">July 20, 2021</span>
                                     </div>
                                 </div>
                                 <div class="footer_blog-container">
                                     <img src="./assets/img/footer1.webp" alt="">
                                     <div class="footer_blog-content">
-                                        <a href="#" class="footer_blog-name">Travel with us this year</a>
+                                        <a href="news.html" class="footer_blog-name">Travel with us this year</a>
                                         <span class="footer_blog-date">July 20, 2021</span>
                                     </div>
                                 </div>
@@ -625,22 +761,22 @@
                                 <h2 class="footer_item-name">contact info</h2>
                             </div>
                             <div class="footer_item-content">
-                                <ul class="footer_item-contact-list">
-                                    <li class="footer_item-contact-item">
-                                        <img src="./assets/img/placeholder.svg" alt="" class="footer_item-contact-icon">
-                                        <a href = "https://www.uit.edu.vn/" class="footer_item-contact-info">Đại học Công nghệ thông tin TP.HCM</a>
+                                <ul class="footer_item-contact-list contact-list">
+                                    <li class="footer_item-contact-item contact-item">
+                                        <img src="./assets/img/placeholder.svg" alt="" class="footer_item-contact-icon contact-icon">
+                                        <a href = "https://www.uit.edu.vn/" class="footer_item-contact-info contact-info">Đại học Công nghệ thông tin TP.HCM</a>
                                     </li>
-                                    <li class="footer_item-contact-item">
-                                        <img src="./assets/img/phone-call.svg" alt="" class="footer_item-contact-icon">
-                                        <a href="tel:0523936017" class="footer_item-contact-info">0523936017</a>
+                                    <li class="footer_item-contact-item contact-item">
+                                        <img src="./assets/img/phone-call.svg" alt="" class="footer_item-contact-icon contact-icon">
+                                        <a href="tel:0523936017" class="footer_item-contact-info contact-info">0523936017</a>
                                     </li>
-                                    <li class="footer_item-contact-item">
-                                        <img src="./assets/img/message.svg" alt="" class="footer_item-contact-icon">
-                                        <a href="mailto:kieuanh7101@gmail.com" class="footer_item-contact-info">kieuanh7101@gmail.com</a>
+                                    <li class="footer_item-contact-item contact-item">
+                                        <img src="./assets/img/message.svg" alt="" class="footer_item-contact-icon contact-icon">
+                                        <a href="mailto:kieuanh7101@gmail.com" class="footer_item-contact-info contact-info">kieuanh7101@gmail.com</a>
                                     </li>
-                                    <li class="footer_item-contact-item">
-                                        <img src="./assets/img/planet-earth.svg" alt="" class="footer_item-contact-icon">
-                                        <a href="" class="footer_item-contact-info">www.fullstack.edu.vn</a>
+                                    <li class="footer_item-contact-item contact-item">
+                                        <img src="./assets/img/planet-earth.svg" alt="" class="footer_item-contact-icon contact-icon">
+                                        <a href="" class="footer_item-contact-info contact-info">www.fullstack.edu.vn</a>
                                     </li>
                                 </ul>
                             </div>

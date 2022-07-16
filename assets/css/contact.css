@@ -1,0 +1,98 @@
+.header-background{
+    background: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../img/contact_background.jpg.webp);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* HOME */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+
+.home_content{
+    text-align: center;
+}
+.home_heading{
+    margin: 0;
+    font-size: 7.2rem;
+    color: var(--white-color);
+    font-weight: 750;
+    line-height: 1.2;
+}
+/*  */
+.contact_title{
+    text-align: center;
+}
+.contact_about{
+    padding: 80px 0;
+}
+.img img{
+    max-width: 100%;
+}
+.contact-logo{
+    color: var(--black-color);
+}
+.contact_about-text{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    color: var(--des-color);
+    line-height: 2;
+}
+/* social */
+.contact_item-social-link{
+    font-size: 1.8rem;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 20px;
+}
+.contact_item-social-link:hover a i{
+    color: var(--white-color) !important;
+}
+
+.contact_item-social-link a i{
+    line-height: 45px !important;
+    color: var(--white-color);
+}
+.contact_item-social-link a i{
+    color: var(--primary-color) !important;
+}
+
+.contact_item-social-link:hover{
+    background-color: var(--primary-color);
+    color: var(--contact-color);
+}
+.contact_item-social-link:hover a i {
+    color: #31124b;
+}
+.contact_item-social-link a i{
+    line-height: 32px;
+    color: var(--white-color);
+} 
+/* info */
+.contact_item-contact-list{
+    padding-top: 80px;
+}
+.contact_item-contact-item{
+    
+}
+.contact_item-contact-icon{
+    width: 25px;
+    height: 25px;
+}
+.contact_item-contact-info{
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.contact_item-contact-info:hover{
+    color: var(--primary-color);
+}
