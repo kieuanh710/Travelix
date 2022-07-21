@@ -271,14 +271,8 @@
     .navbar{
         height: var(--navbar-height-mb);
     }
-    .navbar .scroll{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 99;
-        height: 107px;
-        animation: headerScroll linear .3s forwards;
+    .navbar.scroll{
+        animation:headerScrollMb linear .5s forwards !important;
     }
     .navbar_container{
         height: var(--navbar-height-mb);
@@ -335,7 +329,7 @@
         font-size: 2.2rem;
     }
     .offers{
-        padding: 80px 15px 60px 15px;
+        padding: 80px 15px 0px 15px;
     }
     .offers_content{
         padding-top: 45px;
